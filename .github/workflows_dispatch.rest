@@ -1,0 +1,11 @@
+post https://api.github.com/repos/adirujmu/gh-action-demo/dispatches
+Content-Type: application/json
+Accept: application/vnd.github+json
+Authorization: Bearer {{$dotenv GH_TOKEN}}
+
+{
+  "event_type": "on-demand-test",
+  "client_payload": {
+    "status": "completed"
+  }
+}
