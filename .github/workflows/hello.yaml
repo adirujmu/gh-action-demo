@@ -18,7 +18,7 @@ jobs:
       PACKAGE_NAME: "."
     runs-on: ubuntu-latest
     steps:
-      - name: Echo Github variable
+      - name: Echo Github variables
         env: 
           APP_VERSION: "2.34.5"
           RUNNER_CONTEXT: ${{ toJSON(runner) }}
