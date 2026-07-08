@@ -12,5 +12,6 @@ jobs:
         run: echo "Hello Github Actions!"
   Second-job:
     runs-on: windows-latest
+    needs: hello-job
     steps:
       - run: echo "This job is running on ${{ runner.os }}"
